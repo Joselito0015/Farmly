@@ -70,7 +70,7 @@ const ProductCard = ({ ProductID,imageSrc, productName, price, Quantity, onBuyCl
           <span>{counter}</span>
           <button onClick={handleIncrement}>+</button>
         </div>
-        <button onClick={handleBuy}>Comprar</button>
+        <button id='btnBuy' onClick={handleBuy}>Comprar</button>
       </div>
       <div className="product-chart">
         <LineChart

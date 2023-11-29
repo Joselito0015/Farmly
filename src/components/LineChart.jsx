@@ -12,15 +12,16 @@ const App = ({ Data }) => {
       }
     },
     series: [
-      {
-        name: "Temperatura",
-        type: "line",
-        data: [] // Inicialmente sin datos de temperatura
-      },
+      
       {
         name: "Humedad",
         type: "line",
         data: [] // Inicialmente sin datos de humedad
+      },
+      {
+        name: "Temperatura C°",
+        type: "line",
+        data: [] // Inicialmente sin datos de temperatura
       }
     ]
   });
@@ -40,20 +41,26 @@ const App = ({ Data }) => {
           },
           xaxis: {
             categories: categories
+          },
+          theme: {
+            mode: 'dark' // Cambiar al modo oscuro
           }
         },
         series: [
           {
-            name: "Temperatura",
-            type: "line",
-            data: temperatures
-          },
-          {
-            name: "Humedad",
+            name: "Humedad %",
             type: "line",
             data: humidities
+          },
+          {
+            name: "Temperatura C°",
+            type: "line",
+            data: temperatures
           }
-        ]
+        ],
+        //add dark mode to chart
+        
+
       });
     }
   }, []);

@@ -111,3 +111,23 @@ body {
   font-size: 16px;
   border-radius: 20px;
 }
+
+.counter button {
+  padding: 8px 16px;
+  background-color: #757575;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  Margin-bottom: 15px;
+}
+
+.counter span {
+  margin: 0 21px;
+}
+
+#btnBuy {
+  background-color: #007bff;
+  width: 100%;
+}
